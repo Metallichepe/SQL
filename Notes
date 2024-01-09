@@ -1,0 +1,9 @@
+-- HEY, LOOK HERE! This is called a comment!
+
+-- A comment is text that the database ignores when you run your SQL code
+
+-- You can use comments to leave notes in your SQL code
+
+-- You'll learn more about comments later, but feel free to use them when writing your SQL code if you'd like.
+
+-- All you need to do is type -- at the beginning of your comment. This tells the database to ignore it!
