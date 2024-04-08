@@ -78,6 +78,7 @@ ON inv.TrackId = trc.TrackId;
 
 
 -- #11 Write a query that includes the purchased track name AND artist name with each invoice line ID.
+
 SELECT art.name as artist, trc.name as track, inv.invoicelineid
 FROM chinook.invoice_items AS inv
 LEFT JOIN chinook.tracks AS trc
@@ -101,7 +102,6 @@ on g.GenreId = t.GenreId;
 
 
 --#13 Show the total sales made by each sales agent.
-
 
 SELECT emp.FirstName, emp.LastName,
 ROUND(SUM(Inv.Total), 2) as 'Total Sales' 
