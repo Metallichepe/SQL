@@ -18,16 +18,22 @@ INSERT INTO marathon (participant_name, previous_experience,  completion_fractio
     VALUES ("Rajnighanda Kapoor", "no", 1);
 
 
-    SELECT participant_name as participants
-,completion_fraction*100 as completion_percent
+-- Select every participant name and the percent of the marathon that they completed.
+
+
+SELECT participant_name as participants, completion_fraction*100 as completion_percent
 FROM marathon;
 
 
-SELECT participant_name
-,completion_fraction*100 as completion_percent
+-- Without using ROUND
+
+SELECT participant_name, 
+completion_fraction*100 as completion_percent
 FROM marathon
 WHERE participant_name="Karamo Brown";
 
+
+-- Using ROUND
 
 SELECT participant_name
 ,ROUND(completion_fraction*100) as completion_percent
@@ -35,15 +41,25 @@ FROM marathon
 WHERE participant_name="Karamo Brown";
 
 
+-- Using ROUND and specifying how many decimals you want in your result
+
 SELECT participant_name
 ,ROUND(completion_fraction*100,1) as completion_percent
 FROM marathon
 WHERE participant_name="Karamo Brown";
 
-select participant_name as participants 
+
+-- Select every participant name and the percent of the marathon that they completed. 
+Show the percent of the marathon completed rounded to one decimal place.
+
+
+SELECT participant_name as participants 
 ,round(completion_fraction*100,1) as completion_percent
 from marathon
 order by completion_percent asc;
+
+
+-- For this query, show how many employees completed each quarter of the marathon (75% or more, 50%, 25%, or under 25%).
 
 SELECT COUNT(*),
 CASE WHEN completion_fraction >=.75 THEN "75%+"
