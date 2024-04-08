@@ -3,18 +3,22 @@
 
 -- You're a data analyst for an international shipping and logistics company like DHL. 
 
--- We want to let our customers know about a new discount they can use when they select Express shipments, but we only want to send the discount code to customers who have never used Express shipment before.
+-- We want to let our customers know about a new discount they can use when they select Express shipments, 
+but we only want to send the discount code to customers who have never used Express shipment before.
 
 -- The sender_ID in the shipments table is related to the customer_id in the customers table. 
 
 -- Part 1.
--- Select all customer IDs, customer names, customer emails, and shipping methods from the database. Your results should be in order by customer ID. 
+-- Select all customer IDs, customer names, customer emails, and shipping methods from the database. 
+Your results should be in order by customer ID. 
 
 -- Part 2. 
--- Select the customer IDs, customer names, customer emails, and shipping methods from the database, but only for the customers we have detailed shipping history for (ie, customers for whom we have information in the shipments table). Your results should be in order by customer ID. 
+-- Select the customer IDs, customer names, customer emails, and shipping methods from the database, but only for the customers we have detailed shipping history for 
+(ie, customers for whom we have information in the shipments table). Your results should be in order by customer ID. 
 
 -- Part 3. 
--- Select the customer IDs, customer names, customer emails, and shipping methods from the database, but only for the customers we have detailed shipping history for (ie, customers for whom we have information in the shipments table), and who have only used the 'Standard' shipping method before. Your results should be in order by customer ID. 
+-- Select the customer IDs, customer names, customer emails, and shipping methods from the database, but only for the customers we have detailed shipping history for 
+(ie, customers for whom we have information in the shipments table), and who have only used the 'Standard' shipping method before. Your results should be in order by customer ID. 
 
 
 -- Create the 'customers' table
